@@ -25,11 +25,10 @@ model.eval()
 
 # Função para enviar email (se for legítimo)
 def send_email(recipient, subject, content):
-    # Configurações SMTP (exemplo usando Gmail)
-    smtp_server = 'email-smtp.us-west-2.amazonaws.com'
-    smtp_port = 587
-    smtp_username = 'AKIAYGV7ROMC66GH7EVF'
-    smtp_password = 'BExhATIL1IVztDh6MHN4yLi2/d6B9sOQwQ2ONhh14IDX'
+    smtp_server = "your-smtp-server"
+    smtp_port = 2525
+    smtp_username = "user"
+    smtp_password = "password"
 
     try:
         server = smtplib.SMTP(smtp_server, smtp_port)
